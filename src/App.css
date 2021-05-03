@@ -7,15 +7,15 @@
   outline:none;
 }
 
-body {
+/* body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;    
-}
+} */
 
-ul {
+ ul {
   list-style: none;
-}
+} 
 .main {
   padding: 1rem;
   min-height: 200vh;

@@ -18,22 +18,22 @@ function Nav() {
             Accueil
           </a>
         </li>
-        <li className="navbar__item slideInDown-3">
-          <a href="/" className="navbar__link">
-            Service
-          </a>
-        </li>
-        <li className="navbar__item slideInDown-4">
-          <a href="/" className="navbar__link">
+        <li className="navbar__item slideInDown-2 ">
+          <a href="/apropos" className="navbar__link">
             A propos
           </a>
         </li>
-        <li className="navbar__item slideInDown-5">
-          <a href="/" className="navbar__link">
-            Contact
+        <li className="navbar__item slideInDown-3">
+          <a href="/service" className="navbar__link">
+            service
           </a>
         </li>
-      </ul>
+        <li className="navbar__item slideInDown-4">
+          <a href="/contact" className="navbar__link">
+            contact
+          </a>
+        </li>
+       </ul>
       <button className="navbar__burger" onClick={handleShowLinks}>
         <span className="burger-bar"></span>
       </button>
@@ -41,4 +41,4 @@ function Nav() {
   )
 }
 
-export default Nav
+export default Nav;
