@@ -1,6 +1,6 @@
 import React from "react"
 import { useState } from "react"
-import "./Nav.css"
+// import "./Nav.css"
 
 function Nav() {
   const [showLinks, setShowLinks] = useState(false)
@@ -8,11 +8,11 @@ function Nav() {
   const handleShowLinks = () => {
     setShowLinks(!showLinks)
   }
-
+  // {`navbar ${showLinks ? "show-nav" : "hide-nav"}`}
   return (
-    <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <div className="navbar__logo">Logo</div>
-      <ul className="navbar__links">
+    <nav className="bg-blanc-200 flex content-center justify-center space-x-4 md:py-8">
+      <div className="flex items-center">Logo</div>
+      <ul className="flex space-x-4 md:py-2 text-center">
         <li className="navbar__item slideInDown-1 ">
           <a href="/" className="navbar__link">
             Accueil

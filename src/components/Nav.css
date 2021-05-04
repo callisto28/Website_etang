@@ -7,7 +7,7 @@
   padding:1rem;
   width: 100%;
   min-height: 75px;
-  background-color: #000;
+  background-color: rgb(14, 13, 13);
   color: #FFF;
 }
 .navbar__links { 
