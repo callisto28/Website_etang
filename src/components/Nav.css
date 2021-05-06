@@ -1,17 +1,18 @@
 .navbar {
-  position: fixed;
-  display:flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding:1rem;
-  width: 100%;
-  min-height: 75px;
-  background-color: rgb(14, 13, 13);
-  color: #FFF;
+  /* position: fixed; */
+  /* display:flex;  */
+  /* flex-wrap: wrap; */
+   align-items: center; 
+   justify-content: space-between;
+   padding:0.5rem;
+  /* width: 100%; */
+  /* min-height: 75px;  */
+  /* background-color: rgb(14, 13, 13); */
+   /* color: #FFF;  */
 }
 .navbar__links { 
-  display: flex;   
+  display: flex; 
+  z-index: 1;  
 }
 .navbar__link {
   padding: 0 0.3rem;
@@ -19,6 +20,7 @@
   text-decoration: none;
 }
 .navbar__burger {
+  z-index: 1;
   width:40px;
   height:40px;
   background: transparent;
@@ -26,7 +28,7 @@
   color:inherit;  
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   .navbar__links {
     flex-direction: column;
     justify-content: center;

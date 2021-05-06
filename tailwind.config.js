@@ -1,23 +1,41 @@
 // tailwind.config.js
-
-const colors = require('tailwindcss/colors');
-
 module.exports = {
-     purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-    darkMode: 'media', // or 'media' or 'class'
-    variants: {
-      extend: {},
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    screens: {
+      sm: '320px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1281px'
     },
-    textColor:{
-      blanc: colors.white
+    fontFamily: {
+      sans: ['Roboto', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
     },
-    plugins: [],
-    theme:{
+    extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '40rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
       colors: {
-      blanc: colors.blueGray,
-      gray: colors.coolGray,
-      black: colors.black,
-      bleu: colors.cyan
+        'frost': {
+          'start': '#000428',
+          'end': '#004e92',
         }
-    }
-  }
+      }
+    },
+  
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}
+}
