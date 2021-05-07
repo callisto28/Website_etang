@@ -16,11 +16,7 @@ import Cart from "./pages/Cart";
 function App() {
   return (
     <Router>
-  
       <div class="flex flex-col justify-between items-center">
-      
-
-
         <div class="w-screen mb-5">
           <Nav />
         </div>
@@ -39,14 +35,14 @@ function App() {
               <Apropos />
             </Route>
             <Route path="/lieux">
-              <Cart/>
+              <Cart />
             </Route>
-            </Switch>
-            
+          </Switch>
+
         </div>
-      
+
       </div>
-    
+
     </Router>
   )
 }
