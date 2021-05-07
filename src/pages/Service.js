@@ -8,7 +8,7 @@ const Service = () => {
 
     return (
         <div className="flex flex-col justify-evenly">
-            <section className="flex flex-col">
+            <section className="flex flex-col sm:flex-wrap">
 
                 <h1 class="self-center text-green-500 mb-5 sm:text-center lg:text-left md:text-right"> Voici les tarifs en vigueur pour la saison 2021</h1>
 
@@ -20,7 +20,7 @@ const Service = () => {
                         
                 </div>
                 </div>
-                    <div class="flex md-flex-col border-black border-opacity-100 justify-around">
+                    <div class="flex md-flex-col border-black border-opacity-100 justify-around sm:flex-wrap ">
                         {tarifs.map((tarif) => {
                             return (
                                 <div className="ticket bg-blue-50 border-2 border-blue-400 border-opacity-55 rounded-xl m-8 p-5 flex flex-col justify-between">
@@ -40,9 +40,9 @@ const Service = () => {
             </section>
 
                 <section>
-                    <div className="flex flex-row space-x-4">
-                        <img src="./img/etang1.jpg" alt="etang_champs_romain1" className="float-none" width="600" height="500" />
-                        <img src="./img/etang2.jpg" alt="etang_champs_romain2" className="float-none" width="600" height="500" />
+                    <div className="flex flex-row  sm:flex-wrap">
+                        <img src="./img/etang1.jpg" alt="etang_champs_romain1" className="float-none p-2 " width="600"/>
+                        <img src="./img/etang2.jpg" alt="etang_champs_romain2" className="float-none p-2" width="600"/>
                     </div>
                 </section>
 
