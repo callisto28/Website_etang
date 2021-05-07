@@ -15,15 +15,18 @@ import Cart from "./pages/Cart";
 
 function App() {
   return (
+    
+    <div className="h-screen bg-gradient-to-r from-green-start to-green-end"> 
     <Router>
-      <div class="flex flex-col justify-between items-center">
-        <div class="w-screen mb-5">
+      <div class="flex flex-col justify-between items-center ">
+      
+        <div class="w-full p-0">
           <Nav />
         </div>
-        <div class="mt-1">
+        <div class="">
           <Switch>
             <Route exact path="/">
-              <Accueil />
+              <Accueil title={"CHAMPS-ROMAIN"}/>
             </Route>
             <Route path="/contact">
               <Contact />
@@ -43,7 +46,7 @@ function App() {
 
       </div>
 
-    </Router>
+    </Router></div>
   )
 }
 

@@ -25,6 +25,10 @@ module.exports = {
         'frost': {
           'start': '#000428',
           'end': '#004e92',
+        },
+        'green': {
+          'start': '##D3CCE3',          
+          'end': '#E9E4F0',
         }
       }
     },

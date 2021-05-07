@@ -11,7 +11,7 @@ function Nav() {
   // {`navbar ${showLinks ? "show-nav" : "hide-nav"}`}
   return (
     <section className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-      <nav className="navbar bg-black text-red-200 flex justify-around justify-center space-x-4 md:py-8">
+      <nav className="navbar bg-gray-500 text-red-200 flex justify-around justify-center space-x-4 md:py-8">
         <div className="navbar__logo"><img src="./img/1200px-Blason_département_fr_Dordogne.svg.png" width="50" height="50" alt="" className="Logo" />
         </div>
         <div>
@@ -39,7 +39,7 @@ function Nav() {
           </ul>
         </div>
         <button className="navbar__burger " onClick={handleShowLinks}>
-          <span className="burger-bar"></span>
+          <span className="burger-bar "></span>
         </button>
       </nav>
     </section>

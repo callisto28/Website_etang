@@ -110,7 +110,7 @@ const ContactForm = () => {
                 />
 
                 <input
-                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50 "
+                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-600 border-opacity-75 md:border-opacity-50 placeholder-gray-500 placeholder-opacity-50"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -119,7 +119,7 @@ const ContactForm = () => {
                     value={phone}
                 />
                 <div className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50">
-                    <label id="not-mail ">Email non valide</label>
+                    <label id="not-mail "> Votre email</label>
                     <input
                     className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50 "
                         type="email"
