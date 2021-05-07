@@ -18,23 +18,42 @@ const Accueil = () => {
 
             </div>
             <h1 className="self-center font-black text-green-300 sm:text-center lg:text-left md:text-right">VOUS AIMEREZ AUSSI</h1>
-            <div className="self-center text-green-500 sm:text-center lg:text-left md:text-right">
+            <section className="flex sm:flex-wrap">
+            <div className="flex flex-col  text-green-500 lg:w-2/4 sm:w-full sm:text-center  lg:text-center md:text-right">
 
-                <h2 className="self-center font-bold text-green-500 sm:text-center lg:text-left md:text-right">Le saut du Chalard</h2>
-                <img src="./img/le-saut-du-chalard-2.jpg" alt="Saut du chalard" className="float-none bg-auto md:flex-col" width="400" height="400" />
-                <p className="font-medium">Une légende entoure la cascade :
-                Il se dit qu'une des cloches du village voisin d'Abjat est immergée dans les eaux du saut du Chalard et qu'elle carillonne chaque jeudi vers 14h.
+                <h2 className="font-bold text-green-500 sm:text-center lg:text-left md:text-right">Le saut du Chalard</h2>
+                <div className="flex lg:justify-start sm:flex-wrap justify-center  ">
+                    <img src="./img/le-saut-du-chalard-2.jpg" alt="Saut du chalard" className="float-none bg-auto md:flex-col" width="400" height="400" />
+                    <p className="font-medium lg:w-2/4 leading-snug pl-2 w-full  ">Une légende entoure la cascade :
+                    Il se dit qu'une des cloches du village voisin d'Abjat est immergée dans les eaux du saut du Chalard et qu'elle carillonne chaque jeudi vers 14h.
 
-                Cette légende remonte au 17e siècle.
+                    Cette légende remonte au 17e siècle.
 
-                Le seigneur local tomba fou amoureux d'une jeune fille originaire d'Abjat. Mais, comme dans toute bonne histoire, le cœur de la belle était déjà pris. Le seigneur tenta de l'enlever mais les villageois résistèrent et tuèrent le seigneur dans l'affrontement.
+                    Le seigneur local tomba fou amoureux d'une jeune fille originaire d'Abjat. Mais, comme dans toute bonne histoire, le cœur de la belle était déjà pris. Le seigneur tenta de l'enlever mais les villageois résistèrent et tuèrent le seigneur dans l'affrontement.
 
-                En punition, le Roi fit pendre les habitants du village et enlever toutes les cloches du village.L'une d'elle roula pendant son transport et finit sa course dans les eaux de la Dronne.
+                    En punition, le Roi fit pendre les habitants du village et enlever toutes les cloches du village.L'une d'elle roula pendant son transport et finit sa course dans les eaux de la Dronne.
 
 Il se dit également que la belle mourut de chagrin et que l'on peut apercevoir sa silhouette volant dans le clocher d'Abjat, qui, depuis, a retrouvé ses cloches.</p>
-
+                </div>
             </div>
+            <div className="flex flex-col  text-green-500 lg:w-2/4 sm:w-full sm:text-center  lg:text-left md:text-right">
 
+                <h2 className="font-bold text-green-500 sm:text-center lg:text-left md:text-right">Le saut du Chalard</h2>
+                <div className="flex lg:justify-start sm:flex-wrap justify-center  ">
+                    <img src="./img/le-saut-du-chalard-2.jpg" alt="Saut du chalard" className="float-none bg-auto md:flex-col" width="400" height="400" />
+                    <p className="font-medium lg:w-2/4 pt-2  leading-snug pl-2 w-full  ">Une légende entoure la cascade :
+                    Il se dit qu'une des cloches du village voisin d'Abjat est immergée dans les eaux du saut du Chalard et qu'elle carillonne chaque jeudi vers 14h.
+
+                    Cette légende remonte au 17e siècle.
+
+                    Le seigneur local tomba fou amoureux d'une jeune fille originaire d'Abjat. Mais, comme dans toute bonne histoire, le cœur de la belle était déjà pris. Le seigneur tenta de l'enlever mais les villageois résistèrent et tuèrent le seigneur dans l'affrontement.
+
+                    En punition, le Roi fit pendre les habitants du village et enlever toutes les cloches du village.L'une d'elle roula pendant son transport et finit sa course dans les eaux de la Dronne.
+
+Il se dit également que la belle mourut de chagrin et que l'on peut apercevoir sa silhouette volant dans le clocher d'Abjat, qui, depuis, a retrouvé ses cloches.</p>
+                </div>
+            </div>
+            </section>
         </div>
 
 

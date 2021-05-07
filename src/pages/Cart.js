@@ -17,7 +17,7 @@ const Cart = () => {
                         <p className="adresse">{cart.adresse} </p>
                         <p className="clock">{cart.horaire}</p>
                         <img src={cart.img} alt="" width="480" className="mt-10 py-3" />
-                        <a href={cart.url} className="text-center underline "> {cart.url}</a>
+                        <a href={cart.url} className="text-center underline " target="_blank" rel="noreferrer noopener"> {cart.url}</a>
 
                     </div>
                 )

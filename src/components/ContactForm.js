@@ -132,7 +132,7 @@ const ContactForm = () => {
                     />
                 </div>
                 <textarea
-                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50 resize border rounded-md "
+                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50 border rounded-md "
                     id="message"
                     name="message"
                     onChange={(e) => setMessage(e.target.value)}
@@ -142,7 +142,7 @@ const ContactForm = () => {
                 />
             </div>
             <input
-                className="transition duration-500 ease-in-out bg-green-200 hover:bg-green-600 transform hover:-translate-y-1 hover:scale-150"
+                className="cursor-pointer transition duration-500 ease-in-out bg-green-200 hover:bg-green-600 transform hover:-translate-y-1 hover:scale-150"
                 type="submit"
                 value="envoyer"
                 onClick={handleSubmit}
