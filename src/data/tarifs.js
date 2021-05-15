@@ -4,6 +4,7 @@ const tarifs = [
     id: 1,
     description : " Abonnement pour la saison",
     ici: "C'est par ici 👇",
+    ticket:'carte',
     price: "65 €",
  
     },
@@ -11,6 +12,7 @@ const tarifs = [
     id: 2,
     description : "Abonnement pour la journée",
     ici: "C'est par ici 👇",
+    ticket:'ticket',
     price: "7 €",
         
     },
@@ -18,6 +20,7 @@ const tarifs = [
     id: 3,
     description : "Abonnement pour la demi-journée",
     ici: "C'est par ici 👇",
+    ticket:'ticket',
     price: "4.50 €",
         
     },

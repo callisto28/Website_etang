@@ -16,7 +16,7 @@ import Cart from "./pages/Cart";
 function App() {
   return (
     
-    <div className="h-screen bg-gradient-to-r from-green-start to-green-end"> 
+    <div className="h-screen"> 
     <Router>
       <div class="flex flex-col justify-between items-center ">
       

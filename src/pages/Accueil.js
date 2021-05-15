@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import site from '../data/site';
+import Dynamic2 from '../components/Dynamic2';
+
 
 
 const Accueil = ({title}) => {
@@ -12,14 +14,21 @@ const Accueil = ({title}) => {
             <img src="/img/panneau.jpg" alt="panneau champs-romain" width="180" className="pb-4" />
             </h1>
 
-            <div className="self-center font-black text-black-500  sm:text-center lg:text-left md:text-right">
-                La commune de champs-romain a le plaisir de vous annoncer l'ouverture de la pêche sur l'etang communal.<br />
-                <p className="self-center text-green-500 mb-5 sm:text-center lg:text-left md:text-right p-1">Un magnifique petit étang, idéal pour les pique-niques et une partie de pêche en famille.</p>
+            <div className=" flex flex-col  items-center self-center font-black text-black-500  sm:text-center lg:text-left md:text-right">
+                La commune de champs-romain (24470) située dans le Périgord Vert, a le plaisir de vous annoncer l'ouverture de la pêche sur l'etang communal.<br />
+                <h2 className="text-center text-red-500 sm:text-center lg:text-left md:text-right" > <Dynamic2 /> </h2>
+                <p className="self-center text-green-500 mb-5 sm:text-center lg:text-left md:text-right p-1">Un magnifique étang, idéal pour les pique-niques et une partie de pêche en famille.</p>
+               
+                 
+                       
+                       <span className='text-xs text-red-700'>ICI METTRE VIDEO</span>
+                        
+               
                 <p className="self-center text-black-500 mb-5 sm:text-center lg:text-left md:text-right">INFORMATIONS GÉNÉRALES </p>
                 <p className>sur notre page <a href="/service" alt="" className="underline text-green-300">Services</a>, vous pouvez retrouver les dates légales d'ouverture ainsi que les tarifs et les lieux de ventes des cartes de pêche</p>
 
             </div>
-            <h1 className="self-center font-black text-green-300 sm:text-center lg:text-left md:text-right">VOUS AIMEREZ AUSSI</h1>
+            <h1 className="self-center font-black text-green-300 sm:text-center lg:text-left md:text-right">Découverte proche à Champs-Romain</h1>
             <div className="grid lg:grid-cols-3 gap-1  sd:grid-cols-6 md:grid-cols-2">
             {site.map((site) => {
                 return (

@@ -20,9 +20,10 @@ const site = [
     lieux : "Golf Nature de Champs-Romain",
     img: "./img/champs-romain-golf.jpg",
     description:"Idéal pour découvrir le golf, pour s’y entraîner, pour jouer en famille ou entre amis, le golf nature de Champs Romain est un parcours vallonné 9 trous de 1500 mètres qui s’étale sur 6 hectares. Le Golf Club de Champs Romain se propose de faire des sessions de découverte du jeu de golf à titre gracieux à tous ceux qui seraient intéressés (scolaires, Actifs, Seniors, résidant en Périgord Vert) par petits groupes (aux beaux jours à convenir avec les participants)",
-    url:"https://www.comite-golf-dordogne.com/fr/golf-nature-de-champs-romain.html",
+    url:"https://www.comite-golf-dordogne.com/fr/golf-nature-de-champs-romain.html ",
         
     },
+   
   
 ]
 
