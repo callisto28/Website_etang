@@ -8,9 +8,11 @@ import {
 } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import Apropos from "./pages/Apropos";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import Service from "./pages/Service";
 import Cart from "./pages/Cart";
+
+import ContactForm from "./components/ContactForm";
 
 
 function App() {
@@ -29,7 +31,7 @@ function App() {
               <Accueil title={"CHAMPS-ROMAIN"}/>
             </Route>
             <Route path="/contact">
-              <Contact />
+              <ContactForm/>
             </Route>
             <Route path="/service">
               <Service />

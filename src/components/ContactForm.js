@@ -95,11 +95,12 @@ const ContactForm = () => {
 
     return (
 
-        <form className="px-10 py-20 flex-col bg-blue-50 border-2 border-blue-400 border-opacity-55 md:border-opacity-55 rounded-lg">
-            <h2 className="text-green-500 font-black mb-8">Pour nous contacter</h2>
+        <form className="px-10 py-10flex-col self-center md:border-opacity-55 rounded-lg sm:text-center lg:text-center md:text-center">
+        <img src="./img/etang-panoram-2.jpg" width="1450" alt="" className="shadow-lg rounded-md" />
+            <h2 className="text-black-500 font-black mb-8 pt-2">Pour nous contacter</h2>
             <div className="px-4 py-3 rounded-full" style={{}}>
                 <input
-                    className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50 "
+                    className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 md:border-opacity-50 rounded-md"
                     type="text"
                     id="name"
                     name="name"
@@ -110,7 +111,7 @@ const ContactForm = () => {
                 />
 
                 <input
-                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-600 border-opacity-75 md:border-opacity-50 placeholder-gray-500 placeholder-opacity-50"
+                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 md:border-opacity-50 placeholder-gray-500 placeholder-opacity-50 rounded-md"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -118,10 +119,10 @@ const ContactForm = () => {
                     placeholder="téléphone"
                     value={phone}
                 />
-                <div className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50">
-                    <label id="not-mail "> Votre email</label>
+                <div className="text-black px-4 py-1 mx-2 my- md:border-opacity-50 rounded-md">
+                    <label id="not-mail "> Votre email :</label>
                     <input
-                    className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50 "
+                    className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 border-opacity-75 md:border-opacity-50 rounded-md "
                         type="email"
                         id="email"
                         name="email"
@@ -132,7 +133,7 @@ const ContactForm = () => {
                     />
                 </div>
                 <textarea
-                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-blue-500 border-opacity-75 md:border-opacity-50 border rounded-md "
+                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 border-opacity-75 md:border-opacity-100 border rounded-md "
                     id="message"
                     name="message"
                     onChange={(e) => setMessage(e.target.value)}
@@ -142,7 +143,7 @@ const ContactForm = () => {
                 />
             </div>
             <input
-                className="cursor-pointer transition duration-500 ease-in-out bg-green-200 hover:bg-green-600 transform hover:-translate-y-1 hover:scale-150"
+                className="cursor-pointer px-2 transition duration-500 ease-in-out bg-green-200 hover:bg-red-400 transform hover:-translate-y-1 hover:scale-150 rounded-md"
                 type="submit"
                 value="envoyer"
                 onClick={handleSubmit}

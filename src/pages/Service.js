@@ -21,15 +21,15 @@ const Service = () => {
                 </div>
                 <p></p>
                 <h1 class="self-center text-green-500 mb-5 sm:text-center lg:text-left md:text-right"> Ci-dessous vous pouvez retrouver les tarifs en vigueur pour la saison 2021</h1>
-                <img src="./img/etang-panoram-1.jpg" width="1500" alt="" className="" />
+                <img src="./img/etang-panoram-1.jpg" width="1700" alt="" className="rounded-md" />
 
                     <div class="flex md-flex-col border-black border-opacity-100 justify-around sm:flex-wrap ">
                         {tarifs.map((tarif) => {
                             return (
-                                <div className="ticket bg-blue-50 border-2 border-blue-400 border-opacity-55 rounded-xl m-7 p-5 flex flex-col justify-between">
-                                    <h2 className="ticket_saison flex flex-col items-center text-black-300 text-opacity-75 h-20">{tarif.description}</h2>
-                                    <p>Les ....</p>
-                                    <p className="ticket_saison flex flex-col items-center h-20">{tarif.ici} </p>
+                                <div className="ticket bg-blue-50 border-2 border-blue-400 border-opacity-55 rounded-xl m-7 p-5 flex flex-col justify-between shadow">
+                                    <h2 className="ticket_saison flex flex-col items-center text-black-300 text-opacity-75 h-10">{tarif.description}</h2>
+                                    <p className="flex flex-col items-center text-black text-opacity-75 h-10">Nos points de ventes</p>
+                                    <p className="ticket_saison flex flex-col items-center h-10">{tarif.ici} </p>
                                     <button
                                         class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
                                         onClick={() => (setShowSponsor(true))}>
