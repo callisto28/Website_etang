@@ -73,7 +73,7 @@ const Accueil = ({ title }) => {
                                                         <li>. L'amorce est autorisée le jour même, et <span className="font-semibold text-red-500">INTERDITE</span> la veille. </li>
                                                         <li>. Les chiens doivent être <span className="font-semibold text-red-500">TENUS EN LAISSE</span></li>
                                                         <li>. Les promenades ainsi que les pique-niques sont libres.</li>
-                                                        <li>. La pêche nocturne est  .</li>
+                                                        <li>. La pêche nocturne est <span className="font-semibold text-red-500">INTERDITE</span>  .</li>
                                                     </ol>
                                                 </p>
                                                 <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
