@@ -25,7 +25,7 @@ const shops = [
     adresse:"2Bd Gambetta Nontron",
     tel:"tel. 05 53 56 15 34",
     horaire: "",
-    img: "./img/opecheurVif.png",
+    img: "./img/ovif.jpg",
     url:"https://www.pagesjaunes.fr/pros/60442482",
         
     },

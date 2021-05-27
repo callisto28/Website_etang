@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import site from '../data/site';
+import regle from '../data/regle'
 import Dynamic2 from '../components/Dynamic2';
 
 
 
+
 const Accueil = ({ title }) => {
+    const [showModal, setShowModal] = useState(false)
 
     const [showSite] = useState("")
     return (
@@ -25,17 +28,83 @@ const Accueil = ({ title }) => {
 
                     <source src="./video/etang.mp4" type="video/mp4"></source>
                     <p>Votre navigateur ne prend pas en charge les vidéos HTML5. Voici, à la place, un <a href="./video/etang.mp4">lien à la vidéo</a>.</p>
-                   
+
                 </video>
-                
+
 
 
                 <p className="self-center text-black-500 mb-5 sm:text-center lg:text-left md:text-right">INFORMATIONS GÉNÉRALES </p>
-                <p className>sur notre page <a href="/service" alt="" className="underline text-green-300">Services</a>, vous pouvez retrouver les dates légales d'ouverture ainsi que les tarifs et les lieux de ventes des cartes de pêche</p>
+                <p className>sur notre page <a href="/service" alt="" className="underline text-green-300">Services</a>, vous pouvez retrouver les dates légales d'ouverture ainsi que les tarifs et les points de ventes des cartes de pêche, n'oubliez pas de consulter
 
+
+                    <button className="bg-red-500 text-white active:bg-green-500 font-bold uppercase text-sm px-2 py-0.2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" onClick={() => setShowModal(true)}> LE REGLEMENT </button>
+
+                </p>
             </div>
-            <h1 className="self-center font-black text-green-300 sm:text-center lg:text-left md:text-right">Découverte proche à Champs-Romain</h1>
-            <div className="grid lg:grid-cols-3 gap-1  sd:grid-cols-6 md:grid-cols-2">
+            {regle.map((regle) => {
+                return (
+                    <>
+                        {showModal ? (
+                            <>
+                                <div
+                                    className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                                >
+                                    <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                        {/*content*/}
+                                        <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                            {/*header*/}
+                                            <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                                                <h3 className="text-3xl font-semibold">
+                                                    {regle.title}
+                                                </h3>
+
+                                            </div>
+                                            {/*body*/}
+                                            <div className="relative p-6 flex-auto">
+                                                <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+                                                    {regle.max}
+                                                </p>
+
+                                                <p className="my-4 text-green-500 text-lg leading-relaxed">
+                                                    <ol>
+                                                        <li>. 3 lignes sont autorisées par pêcheur - intervalle :  3m environ.</li>
+                                                        <li>. 1 ligne est autorisée par enfant de -12 ans, accompagné d'un adulte.</li>
+                                                        <li>. La pêche au leurre, à la cuillère, au mort-manié est <span className="font-semibold text-red-500">INTERDITE</span>.</li>
+                                                        <li>. L'amorce est autorisée le jour même, et <span className="font-semibold text-red-500">INTERDITE</span> la veille. </li>
+                                                        <li>. Les chiens doivent être <span className="font-semibold text-red-500">TENUS EN LAISSE</span></li>
+                                                        <li>. Les promenades ainsi que les pique-niques sont libres.</li>
+                                                        <li>. La pêche nocturne est  .</li>
+                                                    </ol>
+                                                </p>
+                                                <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+                                                    {regle.circulation}<span className="font-semibold">strictement interdit</span>,{regle.interdiction}
+                                                </p>
+                                            </div>
+                                            {/*footer*/}
+                                            <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                                                <button
+                                                    className="bg-red-500 rounded-lg text-white background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                                    type="button"
+                                                    onClick={() => setShowModal(false)}
+                                                >
+                                                    Close
+                  </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                            </>
+                        ) : null}
+                    </>
+                )
+            })}
+
+
+
+            <h1 className="self-center font-black text-green-300 sm:text-center lg:text-left md:text-right">Découverte proche de Champs-Romain</h1>
+            <div className="grid lg:grid-cols-3 gap-1  sd:grid-cols-6 md:grid-cols-2 select-none ">
                 {site.map((site) => {
                     return (
                         <div className="flex flex-col justify-between items-center text-center border-4 border-green-400 border-opacity-55 m-2">

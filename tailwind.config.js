@@ -12,6 +12,7 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      philosopher:['philosopher', 'sans-serif']
     },
     extend: {
       spacing: {

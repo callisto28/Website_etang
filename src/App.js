@@ -15,40 +15,43 @@ import Cart from "./pages/Cart";
 import ContactForm from "./components/ContactForm";
 
 
+
 function App() {
   return (
-    
-    <div className="h-screen"> 
-    <Router>
-      <div class="flex flex-col justify-between items-center ">
-      
-        <div class="w-full p-0">
-          <Nav />
-        </div>
-        <div class="">
-          <Switch>
-            <Route exact path="/">
-              <Accueil title={"CHAMPS-ROMAIN"}/>
-            </Route>
-            <Route path="/contact">
-              <ContactForm/>
-            </Route>
-            <Route path="/service">
-              <Service />
-            </Route>
-            <Route path="/apropos">
-              <Apropos />
-            </Route>
-            <Route path="/lieux">
-              <Cart />
-            </Route>
-          </Switch>
+
+    <div className="h-screen">
+      <Router>
+        <div class="flex flex-col justify-between items-center font-philosopher ">
+
+          <div class="w-full p-0">
+            <Nav />
+          </div>
+          <div class="">
+            <Switch>
+              <Route exact path="/">
+                <Accueil title={"CHAMPS-ROMAIN"} />
+              </Route>
+              <Route path="/contact">
+                <ContactForm />
+              </Route>
+              <Route path="/service">
+                <Service />
+              </Route>
+              <Route path="/apropos">
+                <Apropos />
+              </Route>
+              <Route path="/lieux">
+                <Cart />
+              </Route>  
+                      
+            </Switch>
+
+          </div>
 
         </div>
 
-      </div>
-
-    </Router></div>
+      </Router>
+    </div>
   )
 }
 
