@@ -16,18 +16,7 @@ const Contact = () => {
                             <p> 24470 Champs Romain</p>
                         </div>
                     </div>
-                    {/* <div className="phone">
-                        <div className="content">
-                            <h4>Téléphone</h4>
-                            <CopyToClipboard text="0614357031" className="hover">
-                    <p style={{cursor:'pointer'}} className="clipboard" onClick={() =>{
-                        alert("Téléphone copié !");
-                            
-                    }}>06 14 35 70 31</p>
-                            </CopyToClipboard>
-                           
-                        </div>
-                    </div> */}
+                
                     <div className="email">
                         <div className="content">
                             <h4> Notre Email : </h4>
