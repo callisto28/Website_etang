@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
+
 const ContactForm = () => {
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
@@ -34,7 +35,7 @@ const ContactForm = () => {
         if (name && isEmail() && message) {
 
             // const templateId = ****ICI VOTRE TEMPLATE ID (exemple "template_aoffrvBG")****;
-            const templateId = 'template_mrl1rml';
+            const templateId = 'template_13ksuta';
 
             nameS.classList.remove("red");
             emailS.classList.remove("red");
@@ -67,7 +68,7 @@ const ContactForm = () => {
         let formMess = document.querySelector(".form-message");
 
         window.emailjs
-            .send("service_d3qohdm", templateId, variables)
+            .send("service_u2echxa", templateId, variables)
             .then((res) => {
                 formMess.innerHTML =
                     "Message envoyé ! Nous vous recontacterons dès que possible.";
@@ -96,7 +97,7 @@ const ContactForm = () => {
     return (
 
         <form className="px-10 py-10flex-col self-center md:border-opacity-55 rounded-lg sm:text-center lg:text-center md:text-center">
-        <img src="./img/etang-panoram-2.jpg" width="1450" alt="" className="shadow-lg rounded-md" />
+            <img src="./img/etang-panoram-2.jpg" width="1450" alt="" className="shadow-lg rounded-md" />
             <h2 className="text-black-500 font-black mb-8 pt-2">Pour nous contacter</h2>
             <div className="px-4 py-3 rounded-full" style={{}}>
                 <input
@@ -111,7 +112,7 @@ const ContactForm = () => {
                 />
 
                 <input
-                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 md:border-opacity-50 placeholder-gray-500 placeholder-opacity-50 rounded-md"
+                    className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 md:border-opacity-50 placeholder-gray-500 placeholder-opacity-50 rounded-md"
                     type="tel"
                     id="phone"
                     name="phone"
@@ -122,7 +123,7 @@ const ContactForm = () => {
                 <div className="text-black px-4 py-1 mx-2 my- md:border-opacity-50 rounded-md">
                     <label id="not-mail "> Votre email :</label>
                     <input
-                    className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 border-opacity-75 md:border-opacity-50 rounded-md "
+                        className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 border-opacity-75 md:border-opacity-50 rounded-md "
                         type="email"
                         id="email"
                         name="email"
@@ -133,7 +134,7 @@ const ContactForm = () => {
                     />
                 </div>
                 <textarea
-                className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 border-opacity-75 md:border-opacity-100 border rounded-md "
+                    className="text-black-500 px-4 py-1 mx-2 my-2 border-2 border-green-500 border-opacity-75 md:border-opacity-100 border rounded-md "
                     id="message"
                     name="message"
                     onChange={(e) => setMessage(e.target.value)}
@@ -149,7 +150,9 @@ const ContactForm = () => {
                 onClick={handleSubmit}
             />
             <div className="form-message"></div>
+            
         </form>
+       
     );
 };
 

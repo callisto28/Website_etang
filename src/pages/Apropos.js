@@ -1,10 +1,11 @@
 import React from 'react';
+import Contact from "../pages/Contact";
 
 const Apropos = () => {
     return (
         <div className="lg:flex-col sm:flex-wrap ">
             <span className="text-red-700">  <img src="./img/etang-panoram-2.jpg" width="1250" alt="" className="shadow-lg rounded-md" /></span>
-            <div className="flex flex-wrap sm:flex-wrap font-black m-5">Composition du bureau :
+            <div className="flex flex-wrap sm:flex-wrap font-black m-5 p-2">Composition du bureau :
            
                 <div className=" flex flex-wrap lg:text-left md:text-right sd:flex-col sd:text-center">
                     <ul className="flex flex-col font-serif">
@@ -22,7 +23,9 @@ const Apropos = () => {
                 <img src="./img/canne1.jpg" width="450" alt="" className="shadow-lg rounded-md" />
                
                 </div>
-                
+                <div className="flex m-10">
+                <Contact />
+                </div>
             </div>
         </div>
     );
